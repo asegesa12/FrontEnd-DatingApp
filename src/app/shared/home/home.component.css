@@ -1,0 +1,56 @@
+.hero-img {
+  max-width: 60%;
+  margin-top: 40px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-get-started:hover {
+  background: #7a80dc;
+}
+
+.btn-get-started_v2:hover {
+  background: #7a80dc;
+}
+
+button {
+  margin: 5px;
+}
+
+p{
+  font-family: "Krub", sans-serif;
+}
+
+h1{
+  font-family: "Krub", sans-serif;
+}
+
+.btn-get-started {
+  font-family: "Krub", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: block;
+  padding: 8px 32px 10px 32px;
+  margin-top: 25px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: #3b4ef8;
+}
+
+.btn-get-started_v2 {
+  font-family: "Krub", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: block;
+  padding: 8px 32px 10px 32px;
+  margin-top: 25px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: #408bdb;
+}
