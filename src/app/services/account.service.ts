@@ -3,13 +3,15 @@ import { LoginForm } from '../interfaces/login';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../interfaces/user';
 import { map } from 'rxjs';
+import { environment } from '../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AccountService {
 
-  BaseUrl = 'https://localhost:5001/api/';
+  BaseUrl = environment.ApiUrl;
   private _http = inject(HttpClient)
   currentUser = signal<User | null>(null);
   constructor() { }
