@@ -4,13 +4,14 @@ import { RouterOutlet } from '@angular/router';
 import { NavComponent } from './shared/nav/nav.component';
 import { AccountService } from './services/account.service';
 import { HomeComponent } from "./shared/home/home.component";
+import {NgxSpinnerComponent } from 'ngx-spinner';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, NavComponent, HomeComponent]
+    imports: [RouterOutlet, NavComponent, HomeComponent, NgxSpinnerComponent]
 })
 export class AppComponent implements OnInit {
 
