@@ -13,13 +13,6 @@ import { loadingInterceptor } from './Interceptors/loading.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    {
-      provide: GALLERY_CONFIG,
-      useValue: {
-        thumbImageSize: 'contain',
-        imageSize: 'cover'
-      } as GalleryConfig
-    },
     provideRouter(routes),
   provideHttpClient(withInterceptors([errorInterceptor, jwtInterceptor, loadingInterceptor])),
   provideAnimations(),
